@@ -3,6 +3,7 @@ programa {
     //Algoritmo para receber dois números inteiros e soma-los e imprimir o resultado ao usuario
 
     //Declaração das variáveis para realizar a soma
+    //O comando inteiro guarda números inteiros
     inteiro numero1,numero2,resultadosoma
 
     //Mostra uma mensagem pedindo para o usuario digitar algum número inteiro
