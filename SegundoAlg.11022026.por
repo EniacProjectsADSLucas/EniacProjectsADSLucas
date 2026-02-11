@@ -4,7 +4,7 @@ programa {
 
     //Declaração das variáveis para realizar a soma
     //O comando inteiro guarda números inteiros
-    inteiro numero1,numero2,resultadosoma
+    inteiro numero1,numero2,resultadosoma=0
 
     //Mostra uma mensagem pedindo para o usuario digitar algum número inteiro
     escreva("Digite um número inteiro: ")
