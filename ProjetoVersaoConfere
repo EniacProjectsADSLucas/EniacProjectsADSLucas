@@ -1,0 +1,45 @@
+programa {
+  inclua biblioteca Matematica--> mat
+  funcao inicio() {
+    real ex,tr,pr,md,ar
+
+    escreva("Digite a nota dos exercicios: ")
+    leia(ex)
+    escreva("Digite a nota do trabalho: ")
+    leia(tr)
+    escreva("Digite a nota da prova: ")
+    leia(pr)
+
+    enquanto(ex > 10 ou tr > 10 ou pr > 10 ){
+      se(ex > 10){
+        escreva("Erro a nota do exercicio nao pode ser maior que 10\n")
+        escreva("Digite a nota dos exercicios: ")
+        leia(ex)
+      }senao se(tr > 10){
+        escreva("Erro a nota do Trabalho nao pode ser maior que 10\n")
+        escreva("Digite a nota do Trabalho: ")
+        leia(tr)
+      }senao se(pr > 10){
+        escreva("Erro a nota da Prova nao pode ser maior que 10\n")
+        escreva("Digite a nota da Prova: ")
+        leia(pr)
+      }
+    }
+
+    md= (ex*0.2)+(tr*0.3)+(pr*0.5)
+    limpa()
+
+    ar = mat.arredondar(md,2)
+    escreva("Média: ",ar)
+
+    se (ar >= 6) {
+      escreva("\n Aluno aprovado!")
+    } 
+    senao se (ar>=5) {
+      escreva("\n Aluno de recuperação")
+    }
+    senao {
+      escreva("\n Aluno reprovado")
+    }
+  }
+}
