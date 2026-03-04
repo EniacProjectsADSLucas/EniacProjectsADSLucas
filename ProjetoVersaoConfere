@@ -10,17 +10,29 @@ programa {
     escreva("Digite a nota da prova: ")
     leia(pr)
 
-    enquanto(ex > 10 ou tr > 10 ou pr > 10 ){
+    enquanto(ex > 10 ou tr > 10 ou pr > 10 ou ex < 0 ou tr < 0 ou pr < 0 ){
       se(ex > 10){
         escreva("Erro a nota do exercicio nao pode ser maior que 10\n")
         escreva("Digite a nota dos exercicios: ")
         leia(ex)
+      }senao se(ex < 0){
+          escreva("Erro a nota do exercicio nao pode ser menor que 0\n")
+          escreva("Digite a nota dos exercicios: ")
+          leia(ex)
       }senao se(tr > 10){
         escreva("Erro a nota do Trabalho nao pode ser maior que 10\n")
         escreva("Digite a nota do Trabalho: ")
         leia(tr)
+      }senao se(tr < 0){
+        escreva("Erro a nota do Trabalho nao pode ser menor que 0\n")
+        escreva("Digite a nota do Trabalho: ")
+        leia(tr)
       }senao se(pr > 10){
         escreva("Erro a nota da Prova nao pode ser maior que 10\n")
+        escreva("Digite a nota da Prova: ")
+        leia(pr)
+      }senao se(pr < 0){
+        escreva("Erro a nota da Prova nao pode ser menor que 0\n")
         escreva("Digite a nota da Prova: ")
         leia(pr)
       }
