@@ -47,7 +47,7 @@ programa {
     se (ar >= 6) {
       escreva("\n Aluno aprovado!")
     } 
-    senao se (ar>=5) {
+    senao se (ar < 6 e ar>=5) {
       escreva("\n Aluno de recuperação")
     }
     senao {
